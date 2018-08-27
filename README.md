@@ -4,12 +4,10 @@ Tips and Tricks for Linux Priv Escalation
 ## Start with the basics
 
 Who am i?
-id
+`id`
 
 Can I execute code as root?
-
-sudo -l
+`sudo -l`
 
 Who else is on this box (lateral movement)?
-
-ls /home
+`ls /home`
