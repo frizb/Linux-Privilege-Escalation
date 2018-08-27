@@ -14,8 +14,8 @@ Who else is on this box (lateral movement)?
 `cat /etc/passwd`  
 
 What Kernel version and distro are we working with here?  
-`uname -a`
-`cat /etc/issue`
+`uname -a`  
+`cat /etc/issue`  
 
 What files and folders are in my home user's directory?  
 `ls -la ~`
