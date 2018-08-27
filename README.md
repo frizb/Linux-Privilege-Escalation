@@ -4,7 +4,6 @@ Tips and Tricks for Linux Priv Escalation
 ## Start with the basics
 
 Who am i?
-
 id
 
 Can I execute code as root?
