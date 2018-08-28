@@ -66,6 +66,7 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | ssh                                  |                                                                                     |
 | zsh                                  |                                                                                     |
 | tclsh                                  |                                                                                     |
+| strace                                  |  Write and compile a a SUID SUID binary c++ program <br> strace chown root:root suid <br> strace chmod u+s suid <br> ./suid        |
 
 
 Can I access services that are running as root on the local network?  
@@ -95,6 +96,12 @@ Are there configuration files that contain credentials?
 Are any of the discovered credentials being reused by multiple acccounts?  
 `sudo - username`  
 `sudo -s`  
+
+Are there any Cron Jobs Running?  
+
+
+What files have been updated most recently?
+
 
 ## Where can we WRITE?
 
