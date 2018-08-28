@@ -10,14 +10,9 @@ Who else is on this box (lateral movement)?
 `ls -la /home`  
 `cat /etc/passwd`  
 
-What files and folders are in my home user's directory?  
-`ls -la ~`
-
 What Kernel version and distro are we working with here?  
 `uname -a`  
 `cat /etc/issue`  
-
-
 
 ## What can we EXECUTE?
 
@@ -66,8 +61,11 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 
 
 ## What can we READ?
+What files and folders are in my home user's directory?  
+`ls -la ~`  
 
-
+Are there passwords for other users or RSA keys for SSHing into the box?  
+`ssh -i id_rsa root@10.10.10.10`  
 
 ## Where can we WRITE?
 
