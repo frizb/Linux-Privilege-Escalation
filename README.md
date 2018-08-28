@@ -57,7 +57,20 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | csh                                  |                                                                                     |
 | curl                                  |                                                                                     |
 | dash                                  |                                                                                     |
-| ed                                  |                                                                                     |
+| pico                                  |                                                                                     |
+| nano                                  |                                                                                     |
+| vrim                                  |                                                                                     |
+| tclsh                                  |                                                                                     |
+| git                                  |                                                                                     |
+| scp                                  |                                                                                     |
+| expect                                  |                                                                                     |
+| ftp                                  |                                                                                     |
+| socat                                  |                                                                                     |
+| script                                  |                                                                                     |
+| ssh                                  |                                                                                     |
+| zsh                                  |                                                                                     |
+| tclsh                                  |                                                                                     |
+
 
 
 ## What can we READ?
