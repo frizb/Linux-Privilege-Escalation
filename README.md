@@ -120,10 +120,12 @@ Are any of the discovered credentials being reused by multiple acccounts?
 `sudo -s`  
 
 Are there any Cron Jobs Running?  
+`cat /etc/crontab`  
 
-
-What files have been updated most recently?
-
+What files have been modified most recently?  
+`find /etc -type f -printf '%TY-%Tm-%Td %TT %p\n' | sort -r`  
+`find /home -type f -mmin -60`  
+`find / -type f -mtime -2`  
 
 ## Where can we WRITE?
 
