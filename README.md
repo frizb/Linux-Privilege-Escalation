@@ -92,11 +92,11 @@ Can I access services that are running as root on the local network?
 | mysql                                 | raptor_udf2 exploit<br> 0xdeadbeef.info/exploits/raptor_udf2.c <br> insert into foo values(load_file('/home/smeagol/raptor_udf2.so'));                   |
 | apache 			        | drop a reverse shell script on to the webserver                                     |
 | nfs	 			        | no_root_squash parameter <br>  Or <br> if you create the same user name and matching user id as the remote share you can gain access to the files and write new files to the share  |
-
-Are there any active tmux sessions we can connect to?
-`tmux ls`
+| PostgreSQL                            | https://www.exploit-db.com/exploits/45184/                                          |
 
 
+Are there any active tmux sessions we can connect to?  
+`tmux ls`  
 
 ## What can we READ?
 What files and folders are in my home user's directory?  
@@ -174,6 +174,12 @@ Dirty Cow - Linux Kernel 2.6.22 < 3.2.0/3.13.0/4.8.3 - CVE-2016-5195 - October 2
 	Ubuntu 12.04
 	Ubuntu 14.04
 	Ubuntu 16.04
+	
+KASLR / SMEP - Linux Kernel < 4.4.0-83 / < 4.8.0-58 - CVE-2017-1000112 - August 2017
+
+	Ubuntu 14.04
+	Ubuntu 16.04
+	
 	
 Great list here:
 https://github.com/lucyoa/kernel-exploits
