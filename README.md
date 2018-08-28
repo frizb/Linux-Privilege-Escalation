@@ -93,6 +93,10 @@ Can I access services that are running as root on the local network?
 | apache 			        | drop a reverse shell script on to the webserver                                     |
 | nfs	 			        | no_root_squash parameter <br>  Or <br> if you create the same user name and matching user id as the remote share you can gain access to the files and write new files to the share  |
 
+Are there any active tmux sessions we can connect to?
+`tmux ls`
+
+
 
 ## What can we READ?
 What files and folders are in my home user's directory?  
