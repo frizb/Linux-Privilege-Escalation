@@ -84,6 +84,7 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | npm                                 |  ln -s /etc/shadow package.json && sudo /usr/bin/npm i *                            |
 | rsync                                  |                                                                                     |
 | tar                                  |                                                                                     |
+|Screen-4.5.00 				| https://www.exploit-db.com/exploits/41154/					   |
 
 
 Can I access services that are running as root on the local network?  
