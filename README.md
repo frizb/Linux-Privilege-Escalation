@@ -77,6 +77,7 @@ Can I access services that are running as root on the local network?
 |---------------------------------------|-------------------------------------------------------------------------------------|
 | mysql                                 | raptor_udf2 exploit<br> 0xdeadbeef.info/exploits/raptor_udf2.c <br> insert into foo values(load_file('/home/smeagol/raptor_udf2.so'));                   |
 | apache 			        | drop a reverse shell script on to the webserver                                     |
+| nfs	 			        | no_root_squash parameter <br>  Or <br> if you create the same user name and matching user id as the remote share you can gain access to the files and write new files to the share  |
 
 
 ## What can we READ?
@@ -164,4 +165,8 @@ http://www.0daysecurity.com/penetration-testing/enumeration.html
 https://www.rebootuser.com/?p=1623#.V0W5Pbp95JP  
 https://www.doomedraven.com/2013/04/hacking-linux-part-i-privilege.html  
 https://securism.wordpress.com/oscp-notes-privilege-escalation-linux/  
+
+
+https://haiderm.com/linux-privilege-escalation-using-weak-nfs-permissions/
+http://hackingandsecurity.blogspot.com/2016/06/exploiting-network-file-system-nfs.html
 
