@@ -82,6 +82,8 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | tclsh                                  |                                                                                     |
 | strace                                  |  Write and compile a a SUID SUID binary c++ program <br> strace chown root:root suid <br> strace chmod u+s suid <br> ./suid        |
 | npm                                 |  ln -s /etc/shadow package.json && sudo /usr/bin/npm i *                            |
+| rsync                                  |                                                                                     |
+| tar                                  |                                                                                     |
 
 
 Can I access services that are running as root on the local network?  
@@ -210,4 +212,4 @@ https://securism.wordpress.com/oscp-notes-privilege-escalation-linux/
 
 https://haiderm.com/linux-privilege-escalation-using-weak-nfs-permissions/
 http://hackingandsecurity.blogspot.com/2016/06/exploiting-network-file-system-nfs.html
-
+https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt
