@@ -201,7 +201,7 @@ https://github.com/lucyoa/kernel-exploits
 
 ## References
 
-https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/  
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/   
 http://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/  
 https://payatu.com/guide-linux-privilege-escalation/  
 http://www.hackingarticles.in/editing-etc-passwd-file-for-privilege-escalation/  
@@ -209,8 +209,7 @@ http://www.0daysecurity.com/penetration-testing/enumeration.html
 https://www.rebootuser.com/?p=1623#.V0W5Pbp95JP  
 https://www.doomedraven.com/2013/04/hacking-linux-part-i-privilege.html  
 https://securism.wordpress.com/oscp-notes-privilege-escalation-linux/  
-
-
-https://haiderm.com/linux-privilege-escalation-using-weak-nfs-permissions/
-http://hackingandsecurity.blogspot.com/2016/06/exploiting-network-file-system-nfs.html
-https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt
+https://haiderm.com/linux-privilege-escalation-using-weak-nfs-permissions/  
+http://hackingandsecurity.blogspot.com/2016/06/exploiting-network-file-system-nfs.html  
+https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt 
+https://hkh4cks.com/blog/2017/12/30/linux-enumeration-cheatsheet/  
