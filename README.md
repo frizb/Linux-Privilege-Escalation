@@ -113,6 +113,7 @@ Are there configuration files that contain credentials?
 | Application and config file           | Config File Contents                                                                |
 |---------------------------------------|-------------------------------------------------------------------------------------|
 | WolfCMS <br> config.php               | // Database settings: <br> define('DB_DSN', 'mysql:dbname=wolf;host=localhost;port=3306');<br> define('DB_USER', 'root');<br> define('DB_PASS', 'john@123');<br>        |
+| Generic PHP Web App                   | define('DB_PASSWORD', 's3cret');                                                     |
 
 
 Are any of the discovered credentials being reused by multiple acccounts?  
@@ -180,6 +181,7 @@ KASLR / SMEP - Linux Kernel < 4.4.0-83 / < 4.8.0-58 - CVE-2017-1000112 - August 
 	Ubuntu 14.04
 	Ubuntu 16.04
 	
+
 	
 Great list here:
 https://github.com/lucyoa/kernel-exploits
