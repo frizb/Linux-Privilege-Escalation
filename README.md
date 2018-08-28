@@ -130,12 +130,12 @@ https://github.com/lucyoa/kernel-exploits
 
 ## References
 
-https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
-http://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/
-https://payatu.com/guide-linux-privilege-escalation/
-http://www.hackingarticles.in/editing-etc-passwd-file-for-privilege-escalation/
-http://www.0daysecurity.com/penetration-testing/enumeration.html
-https://www.rebootuser.com/?p=1623#.V0W5Pbp95JP
-https://www.doomedraven.com/2013/04/hacking-linux-part-i-privilege.html
-https://securism.wordpress.com/oscp-notes-privilege-escalation-linux/
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/  
+http://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/  
+https://payatu.com/guide-linux-privilege-escalation/  
+http://www.hackingarticles.in/editing-etc-passwd-file-for-privilege-escalation/  
+http://www.0daysecurity.com/penetration-testing/enumeration.html  
+https://www.rebootuser.com/?p=1623#.V0W5Pbp95JP  
+https://www.doomedraven.com/2013/04/hacking-linux-part-i-privilege.html  
+https://securism.wordpress.com/oscp-notes-privilege-escalation-linux/  
 
