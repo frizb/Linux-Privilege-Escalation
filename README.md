@@ -99,24 +99,32 @@ What Kernel version and distro are we working with here?
 Based on the Kernel version, do we have some reliable exploits that can be used?
 
 UDEV - Linux Kernel < 2.6 & UDEV < 1.4.1 - CVE-2009-1185 - April 2009  
+
 	Ubuntu 8.10  
 	Ubunto 9.04  
 	Gentoo  
 
 RDS -  Linux Kernel <= 2.6.36-rc8 - CVE-2010-3904 - Linux  Exploit -
-     Centos 4/5
+
+	Centos 4/5
 
 perf_swevent_init - Linux Kernel < 3.8.9 (x86-64) - CVE-2013-2094 - June 2013  
+	
 	Ubuntu 12.04.2  
 
 mempodipper - Linux Kernel 2.6.39 < 3.2.2 (x86-64) - CVE-2012-0056 - January 2012  
+    
     Ubuntu 11.10
     Ubuntu 10.04  
     Redhat 6  
     Oracle 6  
 
-Dirty Cow - 
+Dirty Cow - Linux Kernel 2.6.22 < 3.2.0/3.13.0/4.8.3 - CVE-2016-5195 - October 2016
 
+	Ubuntu 12.04
+	Ubuntu 14.04
+	Ubuntu 16.04
+	
 Great list here:
 https://github.com/lucyoa/kernel-exploits
 
