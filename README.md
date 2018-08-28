@@ -89,14 +89,12 @@ Are there configuration files that contain credentials?
 
 | Application and config file           | Config File Contents                                                                |
 |---------------------------------------|-------------------------------------------------------------------------------------|
-| WolfCMS <br> config.php               | // Database settings: <br>
-define('DB_DSN', 'mysql:dbname=wolf;host=localhost;port=3306');<br>
-define('DB_USER', 'root');<br>
-define('DB_PASS', 'john@123');<br>        |
+| WolfCMS <br> config.php               | // Database settings: <br> define('DB_DSN', 'mysql:dbname=wolf;host=localhost;port=3306');<br> define('DB_USER', 'root');<br> define('DB_PASS', 'john@123');<br>        |
 
 
-
-
+Are any of the discovered credentials being reused by multiple acccounts?  
+`sudo - username`  
+`sudo -s`  
 
 ## Where can we WRITE?
 
@@ -109,7 +107,7 @@ What folder can I write to?
 | Writable Folder / file    | Priv Esc Command                                                                                |
 |---------------------------|-------------------------------------------------------------------------------------------------|
 | /home/*USER*/             | Create an ssh key and copy it to the .ssh/authorized_keys folder the ssh into the account       |
-| /etc/passwd               | manually add a user with a password of "password" using the following syntax<br> user:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:1000:1000:,,,:/home/user:/bin/bash <br> You can even escalate to the root user in some cases with the following syntax: <br> admin:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:0:0:,,,:/root:/bin/bash                         |
+| /etc/passwd               | manually add a user with a password of "password" using the following syntax<br>user:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:1000:1000:,,,:/home/user:/bin/bash <br> You can even escalate to the root user in some cases with the following syntax: <br> admin:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:0:0:,,,:/root:/bin/bash                         |
 
 ## Kernel Exploits
 
