@@ -128,6 +128,10 @@ What files have been modified most recently?
 `find /home -type f -mmin -60`  
 `find / -type f -mtime -2`  
 
+Is the user a member of the Video group and can we read the Framebuffer?  
+`cat /dev/fb0 > /tmp/screen.raw`  
+`cat /sys/class/graphics/fb0/virtual_size`  
+
 ## Where can we WRITE?
 
 What are all the files can I write to?  
