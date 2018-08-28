@@ -68,6 +68,15 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | tclsh                                  |                                                                                     |
 
 
+Can I access services that are running as root on the local network?  
+`netstat -antup`  
+`ps -aux | grep root`  
+
+| Network Services Running as Root      | Exploit actions                                                                     |
+|---------------------------------------|-------------------------------------------------------------------------------------|
+| mysql                                 | raptor_udf2 exploit<br> 0xdeadbeef.info/exploits/raptor_udf2.c <br> insert into foo values(load_file('/home/smeagol/raptor_udf2.so'));                   |
+| apache 			        | drop a reverse shell script on to the webserver                                     |
+
 
 ## What can we READ?
 What files and folders are in my home user's directory?  
