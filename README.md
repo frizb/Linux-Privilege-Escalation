@@ -118,7 +118,9 @@ Are there configuration files that contain credentials?
 |---------------------------------------|-------------------------------------------------------------------------------------|
 | WolfCMS <br> config.php               | // Database settings: <br> define('DB_DSN', 'mysql:dbname=wolf;host=localhost;port=3306');<br> define('DB_USER', 'root');<br> define('DB_PASS', 'john@123');<br>        |
 | Generic PHP Web App                   | define('DB_PASSWORD', 's3cret');                                                     |
-
+| .ssh directory 		        | authorized_keys<br>id_rsa<br>id_rsa.keystore<br>id_rsa.pub<br>known_hosts            |
+| User MySQL Info	                | .mysql_history<br>.my.cnf						               |
+| User Bash History 	                | .bash_history                  					               |
 
 Are any of the discovered credentials being reused by multiple acccounts?  
 `sudo - username`  
@@ -213,3 +215,4 @@ https://haiderm.com/linux-privilege-escalation-using-weak-nfs-permissions/
 http://hackingandsecurity.blogspot.com/2016/06/exploiting-network-file-system-nfs.html  
 https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt 
 https://hkh4cks.com/blog/2017/12/30/linux-enumeration-cheatsheet/  
+https://digi.ninja/blog/when_all_you_can_do_is_read.php 
