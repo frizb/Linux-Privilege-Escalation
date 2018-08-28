@@ -10,10 +10,6 @@ Who else is on this box (lateral movement)?
 `ls -la /home`  
 `cat /etc/passwd`  
 
-What Kernel version and distro are we working with here?  
-`uname -a`  
-`cat /etc/issue`  
-
 ## What can we EXECUTE?
 
 Who can execute code as root (probably will get a permission denied)?  
@@ -93,6 +89,36 @@ What folder can I write to?
 | /home/*USER*/             | Create an ssh key and copy it to the .ssh/authorized_keys folder the ssh into the account       |
 | /etc/passwd               | manually add a user with a password of "password" using the following syntax<br> user:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:1000:1000:,,,:/home/user:/bin/bash <br> You can even escalate to the root user in some cases with the following syntax: <br> admin:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:0:0:,,,:/root:/bin/bash                         |
 | /home/*USER*/             | Create an ssh key and copy it to the .ssh/authorized_keys folder the ssh into the account       |
+
+## Kernel Exploits
+
+What Kernel version and distro are we working with here?  
+`uname -a`  
+`cat /etc/issue`  
+
+Based on the Kernel version, do we have some reliable exploits that can be used?
+
+UDEV - Linux Kernel < 2.6 & UDEV < 1.4.1 - CVE-2009-1185 - April 2009  
+	Ubuntu 8.10  
+	Ubunto 9.04  
+	Gentoo  
+
+RDS -  Linux Kernel <= 2.6.36-rc8 - CVE-2010-3904 - Linux  Exploit -
+     Centos 4/5
+
+perf_swevent_init - Linux Kernel < 3.8.9 (x86-64) - CVE-2013-2094 - June 2013  
+	Ubuntu 12.04.2  
+
+mempodipper - Linux Kernel 2.6.39 < 3.2.2 (x86-64) - CVE-2012-0056 - January 2012  
+    Ubuntu 11.10
+    Ubuntu 10.04  
+    Redhat 6  
+    Oracle 6  
+
+Dirty Cow - 
+
+Great list here:
+https://github.com/lucyoa/kernel-exploits
 
 ## References
 
