@@ -10,12 +10,14 @@ Who else is on this box (lateral movement)?
 `ls -la /home`  
 `cat /etc/passwd`  
 
+What files and folders are in my home user's directory?  
+`ls -la ~`
+
 What Kernel version and distro are we working with here?  
 `uname -a`  
 `cat /etc/issue`  
 
-What files and folders are in my home user's directory?  
-`ls -la ~`
+
 
 ## What can we EXECUTE?
 
@@ -32,6 +34,8 @@ What executables have SUID bit that can be executed as another user?
 
 What files can I execute?
 
+Can I write files into a folder containing a SUID bit file?  
+Might be possible to take advantage of a '.' in the PATH or an The IFS (or Internal Field Separator) Exploit.  
 
 If any of the following commands appear on the list of SUID or SUDO commands, they can be used for privledge escalation:
 
@@ -85,5 +89,8 @@ https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 http://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/
 https://payatu.com/guide-linux-privilege-escalation/
 http://www.hackingarticles.in/editing-etc-passwd-file-for-privilege-escalation/
-
+http://www.0daysecurity.com/penetration-testing/enumeration.html
+https://www.rebootuser.com/?p=1623#.V0W5Pbp95JP
+https://www.doomedraven.com/2013/04/hacking-linux-part-i-privilege.html
+https://securism.wordpress.com/oscp-notes-privilege-escalation-linux/
 
