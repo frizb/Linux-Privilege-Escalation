@@ -216,3 +216,5 @@ http://hackingandsecurity.blogspot.com/2016/06/exploiting-network-file-system-nf
 https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt 
 https://hkh4cks.com/blog/2017/12/30/linux-enumeration-cheatsheet/  
 https://digi.ninja/blog/when_all_you_can_do_is_read.php 
+
+https://medium.com/@D00MFist/vulnhub-lin-security-1-d9749ea645e2
