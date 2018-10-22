@@ -1,6 +1,22 @@
 # Linux-Privilege-Escalation
 Tips and Tricks for Linux Priv Escalation
 
+Fix the Shell:
+```
+python -c 'import pty; pty.spawn("/bin/bash")'
+Ctrl-Z
+
+# In Kali
+$ stty raw -echo
+$ fg
+
+# In reverse shell
+$ reset
+$ export SHELL=bash
+$ export TERM=xterm-256color
+$ stty rows <num> columns <cols>
+```
+
 ## Start with the basics
 
 Who am i and what groups do I belong to?  
