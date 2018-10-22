@@ -26,6 +26,10 @@ Who else is on this box (lateral movement)?
 `ls -la /home`  
 `cat /etc/passwd`  
 
+What Kernel version and distro are we working with here?  
+`uname -a`  
+`cat /etc/issue`  
+
 ## What can we EXECUTE?
 
 Who can execute code as root (probably will get a permission denied)?  
@@ -173,10 +177,6 @@ What folder can I write to?
 | /etc/passwd               | manually add a user with a password of "password" using the following syntax<br>user:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:1000:1000:,,,:/home/user:/bin/bash <br> You can even escalate to the root user in some cases with the following syntax: <br> admin:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:0:0:,,,:/root:/bin/bash                         |
 
 ## Kernel Exploits
-
-What Kernel version and distro are we working with here?  
-`uname -a`  
-`cat /etc/issue`  
 
 Based on the Kernel version, do we have some reliable exploits that can be used?
 
