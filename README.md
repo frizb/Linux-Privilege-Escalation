@@ -106,6 +106,9 @@ If any of the following commands appear on the list of SUID or SUDO commands, th
 | tar                                  |                                                                                     |
 |Screen-4.5.00 				| https://www.exploit-db.com/exploits/41154/					   |
 
+*Note:* You can find an incredible list of Linux binaries that can lead to privledge escalation at the GTFOBins project website here:  
+https://gtfobins.github.io/
+
 
 Can I access services that are running as root on the local network?  
 `netstat -antup`  
