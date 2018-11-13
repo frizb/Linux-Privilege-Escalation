@@ -35,6 +35,24 @@ What Kernel version and distro are we working with here?
 `uname -a`  
 `cat /etc/issue`  
 
+What new processes are running on the server (Thanks to IPPSEC for the script!):   
+``` 
+#!/bin/bash
+
+# Loop by line
+IFS=$'\n'
+
+old_process=$(ps aux --forest | grep -v "ps aux --forest" | grep -v "sleep 1" | grep -v $0)
+
+while true; do
+  new_process=$(ps aux --forest | grep -v "ps aux --forest" | grep -v "sleep 1" | grep -v $0)
+  diff <(echo "$old_process") <(echo "$new_process") | grep [\<\>]
+  sleep 1
+  old_process=$new_process
+done
+```
+
+
 ## What can we EXECUTE?
 
 Who can execute code as root (probably will get a permission denied)?  
