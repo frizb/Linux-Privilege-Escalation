@@ -294,6 +294,11 @@ find -L /  -type f -newermt 2019-08-24 ! -newermt 2019-08-27 2>&1 > /tmp/foundfi
 ```
 This has helped me to find interesting files on a few different CTF machines.
 
+Recursively searching for passwords is also a handy technique:
+```
+grep -ri "passw" .
+```
+
 ## References
 
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/   
