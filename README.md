@@ -52,6 +52,14 @@ while true; do
 done
 ```
 
+We can also use pspy on linux to monitor the processes that are starting up and running.
+
+
+Check the services that are listening:
+```bash
+ss -lnpt
+```
+
 
 ## What can we EXECUTE?
 
