@@ -273,7 +273,7 @@ https://github.com/lucyoa/kernel-exploits
 ## Automated Linux Enumeration Scripts
 It is always a great idea to automate the enumeration process once you understand what you are looking for.
 
-### LinEmum.sh
+### LinEnum.sh
 LinEnum is a handy method of automating Linux enumeration.  It is also written as a shell script and does not require any other intpreters (Python,PERL etc.) which allows you to run it file-lessly in memory.
 
 First we need to git a copy to our local Kali linux machine:
